@@ -1,0 +1,1831 @@
+{
+  "meta": {
+    "title": "La entrevista: Feijóo en The Wild Project",
+    "version": "2026-11-13.1",
+    "duration": "01:28:20",
+    "interviewee": {
+      "name": "Alberto Núñez Feijóo",
+      "role": "Candidato del Partido Popular a la presidencia del Gobierno"
+    },
+    "interviewer": {
+      "name": "Jordi Wild",
+      "role": "Presentador de The Wild Project"
+    },
+    "summary": "Jordi Wild entrevista a Alberto Núñez Feijóo en vísperas de la campaña electoral. Hablan de pactos con Vox, pensiones, autónomos, deuda, Ceuta, inmigración y corrupción, con dos verificadores comprobando los datos en directo.",
+    "intro": [
+      "Estás en el plató de The Wild Project. Jordi Wild entrevista a los candidatos a la presidencia del Gobierno antes de las elecciones.",
+      "Tú eres Alberto Núñez Feijóo, candidato del Partido Popular. Fuiste el primero en aceptar la invitación.",
+      "No hay preguntas pactadas, y dos verificadores, Iván Muñoz y Javier Collado, comprueban los datos en directo.",
+      "Jordi pregunta y tú eliges la respuesta que Feijóo dio de verdad. Aciertes o no, verás lo que realmente dijo."
+    ],
+    "closing": {
+      "text": "Les hago una pregunta: ¿viven mejor en el año 2026 que en el año 2018? […] Creo que es necesario un cambio político en España.",
+      "source": {
+        "start": "01:26:57",
+        "end": "01:28:18"
+      }
+    },
+    "excluded": [
+      {
+        "start": "01:02:23",
+        "end": "01:04:31",
+        "reason": "Acusación no probada contra un tercero"
+      },
+      {
+        "start": "01:07:34",
+        "end": "01:08:43",
+        "reason": "Acusación no probada contra un tercero"
+      }
+    ]
+  },
+  "zones": [
+    {
+      "id": "zone-01",
+      "title": "Vox y los bandos",
+      "intro": "Quiero comenzar por el posible gobierno y por Vox, los que pueden ser tus socios.",
+      "keyIdeas": [
+        "Se sitúa fuera de los «bandos»: dice creer en la centralidad y se define como reformista.",
+        "Sus discrepancias con Vox: la idea de Europa y el Estado de las autonomías.",
+        "Defiende que los pactos autonómicos con Vox se han hecho con un documento marco que se ha respetado.",
+        "Señala a Pedro Sánchez como el político que vive de la división."
+      ],
+      "turns": [
+        {
+          "id": "z01-t01",
+          "type": "choice",
+          "question": "Mucha gente ve estas elecciones como dos bandos. ¿Por qué debería votarte a ti y no a Abascal alguien de derechas?",
+          "options": [
+            {
+              "text": "No pertenezco a ningún bando: creo en la centralidad y soy un político reformista.",
+              "kind": "real"
+            },
+            {
+              "text": "Porque soy de derechas, pero más moderado que Abascal.",
+              "kind": "partial"
+            },
+            {
+              "text": "Porque el voto útil de la derecha es el PP; Vox solo divide ese voto.",
+              "kind": "false"
+            },
+            {
+              "text": "Porque Vox y el PP defendemos lo mismo y yo tengo más experiencia.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo no pertenezco a ningún bando, yo creo en la centralidad política […] Yo soy un político reformista.",
+          "verified": false,
+          "source": {
+            "start": "00:05:44",
+            "end": "00:06:58"
+          }
+        },
+        {
+          "id": "z01-t02",
+          "type": "choice",
+          "question": "¿Cuál es la mayor discrepancia que tienes con Vox?",
+          "options": [
+            {
+              "text": "La idea de Europa, que no comparto, y el Estado de las autonomías, en el que sí creo.",
+              "kind": "real"
+            },
+            {
+              "text": "Su política de inmigración, que me parece imposible de aplicar.",
+              "kind": "false"
+            },
+            {
+              "text": "Su programa económico, demasiado liberal para mi partido.",
+              "kind": "false"
+            },
+            {
+              "text": "Ninguna de fondo: nos separan las formas, no las ideas.",
+              "kind": "false"
+            }
+          ],
+          "quote": "La idea de Europa yo no la comparto. El Estado de las autonomías, en el que ellos no creen, yo sí creo.",
+          "verified": true,
+          "source": {
+            "start": "00:07:10",
+            "end": "00:07:44"
+          }
+        },
+        {
+          "id": "z01-t03",
+          "type": "choice",
+          "question": "Jordi cree que todos los políticos participan en la crispación. ¿A quién señalas tú?",
+          "options": [
+            {
+              "text": "A Pedro Sánchez: creo que ha vivido y sigue viviendo de la fractura y del bando.",
+              "kind": "real"
+            },
+            {
+              "text": "A todos los partidos por igual, empezando por el mío.",
+              "kind": "false"
+            },
+            {
+              "text": "A los medios y las redes, que premian el enfrentamiento.",
+              "kind": "false"
+            },
+            {
+              "text": "A los partidos independentistas, que necesitan el conflicto.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo creo que hay un político en España que ha vivido y sigue viviendo de la fractura y del bando […] Pedro Sánchez.",
+          "verified": true,
+          "source": {
+            "start": "00:08:28",
+            "end": "00:09:00"
+          }
+        },
+        {
+          "id": "z01-t04",
+          "type": "true_false",
+          "question": "Feijóo dijo en la entrevista que votó a Felipe González en 1982.",
+          "options": [
+            {
+              "text": "Verdadero",
+              "kind": "real"
+            },
+            {
+              "text": "Falso",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo he votado a Felipe González en 1982, es conocido.",
+          "verified": true,
+          "source": {
+            "start": "00:09:54",
+            "end": "00:10:36"
+          }
+        },
+        {
+          "id": "z01-t05",
+          "type": "choice",
+          "question": "¿Hay alguna exigencia de Vox que sea una línea roja, por la que preferirías no ser presidente antes que ceder?",
+          "options": [
+            {
+              "text": "No me planteo ese supuesto: ya pactamos con Vox con un documento marco que se respetó.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí: no aceptaré que se toque el Estado de las autonomías.",
+              "kind": "false"
+            },
+            {
+              "text": "Sí: no cederé en nada que afecte a la pertenencia a Europa.",
+              "kind": "false"
+            },
+            {
+              "text": "No hay líneas rojas: estoy dispuesto a negociarlo todo.",
+              "kind": "false"
+            }
+          ],
+          "quote": "No me planteo ese supuesto, porque ya tenemos una experiencia acreditada […] hemos hecho un documento marco dentro de mi partido y ese documento se ha respetado.",
+          "verified": true,
+          "source": {
+            "start": "00:14:44",
+            "end": "00:15:34"
+          }
+        },
+        {
+          "id": "z01-t06",
+          "type": "choice",
+          "question": "Hay mucha gente a la que le preocupa un pacto con Vox. ¿Lo entiendes?",
+          "options": [
+            {
+              "text": "Entiendo la preocupación, pero donde gobernamos con Vox no hemos tenido ningún problema.",
+              "kind": "real"
+            },
+            {
+              "text": "Entiendo la preocupación: con Vox seguimos teniendo discusiones muy tensas.",
+              "kind": "partial"
+            },
+            {
+              "text": "No la entiendo: Vox es un partido constitucional como cualquier otro.",
+              "kind": "false"
+            },
+            {
+              "text": "La entiendo, y por eso Vox no entrará en mi Gobierno.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo puedo entender perfectamente la preocupación; lo que sí puedo acreditar es que en los gobiernos donde está Vox […] no hemos tenido ningún problema en esta nueva etapa.",
+          "verified": true,
+          "source": {
+            "start": "00:15:34",
+            "end": "00:16:26"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-02",
+      "title": "El Gobierno que formaría",
+      "intro": "Supongamos que ganas y te toca formar gobierno. Vamos a ver cómo sería.",
+      "keyIdeas": [
+        "Tiene ministerios innegociables, pero no revela cuáles.",
+        "Promete un gobierno de 14 o 15 ministerios frente a los 22 actuales.",
+        "No habrá ministerio de Igualdad ni de Vivienda como tales; dice que las políticas seguirán.",
+        "Lo justifica con la austeridad en altos cargos."
+      ],
+      "turns": [
+        {
+          "id": "z02-t01",
+          "type": "choice",
+          "question": "Si tuvieras que pactar, ¿tienes algún ministerio que sea innegociable?",
+          "options": [
+            {
+              "text": "Sí lo tengo, pero no diré cuál: no es el momento ni voy a desvelar mi negociación.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí: Interior, Defensa y Justicia serán del Partido Popular.",
+              "kind": "false"
+            },
+            {
+              "text": "No: todos los ministerios están abiertos a negociación.",
+              "kind": "false"
+            },
+            {
+              "text": "No hablaré de ministerios porque voy a gobernar en solitario.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Jordi, sí lo tengo […] creo que no es el momento y, en segundo lugar, yo no voy a acreditar la estrategia que planteo.",
+          "verified": true,
+          "source": {
+            "start": "00:12:54",
+            "end": "00:13:55"
+          }
+        },
+        {
+          "id": "z02-t02",
+          "type": "choice",
+          "question": "¿Qué gobierno necesita España, en tu opinión?",
+          "options": [
+            {
+              "text": "Un gobierno decente, competente y rápido, con experiencia y rigor.",
+              "kind": "real"
+            },
+            {
+              "text": "Un gobierno de concentración entre los dos grandes partidos.",
+              "kind": "false"
+            },
+            {
+              "text": "Un gobierno técnico, con independientes al frente de la economía.",
+              "kind": "false"
+            },
+            {
+              "text": "Un gobierno fuerte y en solitario, sin deber nada a ningún socio.",
+              "kind": "false"
+            }
+          ],
+          "quote": "España necesita un gobierno, primero, decente, competente, rápido, que tenga experiencia, que tenga rigor, que sepa hacer las cosas importantes.",
+          "verified": true,
+          "source": {
+            "start": "00:13:48",
+            "end": "00:14:44"
+          }
+        },
+        {
+          "id": "z02-t03",
+          "type": "complete",
+          "question": "«Hay 22 ministerios. Mi estructura ministerial estará entre ___ ministerios.»",
+          "options": [
+            {
+              "text": "14 y 15",
+              "kind": "real"
+            },
+            {
+              "text": "10 y 11",
+              "kind": "false"
+            },
+            {
+              "text": "17 y 18",
+              "kind": "false"
+            },
+            {
+              "text": "19 y 20",
+              "kind": "false"
+            }
+          ],
+          "quote": "Mi estructura ministerial estará entre 14 y 15 ministerios.",
+          "verified": true,
+          "source": {
+            "start": "00:17:08",
+            "end": "00:17:22"
+          }
+        },
+        {
+          "id": "z02-t04",
+          "type": "choice",
+          "question": "Si eres presidente, ¿quitas el Ministerio de Igualdad?",
+          "options": [
+            {
+              "text": "No habrá ministerio de Igualdad como tal: se agrupará con otros; las políticas siguen.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí, lo suprimo: España tiene demasiados ministerios.",
+              "kind": "partial"
+            },
+            {
+              "text": "No, lo mantengo igual: la igualdad es una prioridad de Estado.",
+              "kind": "false"
+            },
+            {
+              "text": "Lo decidiré cuando negocie el Gobierno con mis socios.",
+              "kind": "false"
+            }
+          ],
+          "quote": "El ministerio de Igualdad se agrupará con otros ministerios […] no habrá un ministerio de Igualdad como tal.",
+          "verified": true,
+          "source": {
+            "start": "00:17:12",
+            "end": "00:17:40"
+          }
+        },
+        {
+          "id": "z02-t05",
+          "type": "true_false",
+          "question": "Feijóo dijo que mantendrá un Ministerio de Vivienda porque la vivienda es la primera prioridad.",
+          "options": [
+            {
+              "text": "Verdadero",
+              "kind": "false"
+            },
+            {
+              "text": "Falso",
+              "kind": "real"
+            }
+          ],
+          "quote": "Tampoco va a haber un ministerio de Vivienda, y la vivienda es la primera prioridad para la mayoría de la gente en España.",
+          "verified": true,
+          "context": "Dijo que tampoco habrá ministerio de Vivienda, aunque la considera la primera prioridad.",
+          "source": {
+            "start": "00:18:40",
+            "end": "00:19:20"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-03",
+      "title": "Pensiones y absentismo",
+      "intro": "Empecemos por la economía. Las pensiones: muchos economistas dicen que esto empieza a ser inasumible.",
+      "keyIdeas": [
+        "Fía la viabilidad de las pensiones a un crecimiento «sano» de la economía y a nuevos cotizantes.",
+        "Se compromete a actualizar las pensiones con el IPC.",
+        "Jubilación a los 67 años, sin ampliación obligatoria; seguir trabajando sería voluntario.",
+        "Dice no creerse las cuentas públicas y ve una bolsa de ahorro en el absentismo laboral."
+      ],
+      "turns": [
+        {
+          "id": "z03-t01",
+          "type": "choice",
+          "question": "Tu portavoz de campaña dijo que el sistema de pensiones «va a petar». ¿Es asumible a largo plazo?",
+          "options": [
+            {
+              "text": "Lo será si la economía crece de forma sana y llegan nuevos cotizantes.",
+              "kind": "real"
+            },
+            {
+              "text": "No lo es: habrá que recortar las pensiones más altas.",
+              "kind": "false"
+            },
+            {
+              "text": "Sí, sin cambios: el sistema actual está garantizado.",
+              "kind": "false"
+            },
+            {
+              "text": "Lo será si sigue creciendo la población, como en estos años.",
+              "kind": "false"
+            }
+          ],
+          "quote": "El crecimiento sano de la economía es conseguir mayor inversión pública, sobre todo inversión privada, traer inversión extranjera y hacer una economía tractora que cree empleo de verdad.",
+          "verified": true,
+          "source": {
+            "start": "00:19:58",
+            "end": "00:21:18"
+          }
+        },
+        {
+          "id": "z03-t02",
+          "type": "choice",
+          "question": "¿No te crees los datos de las cuentas públicas?",
+          "options": [
+            {
+              "text": "No me los creo: pienso que hay falsificación de datos y ocultación de gasto.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí me los creo; lo que critico es en qué se gasta el dinero.",
+              "kind": "false"
+            },
+            {
+              "text": "Los daré por buenos hasta que una auditoría diga otra cosa.",
+              "kind": "false"
+            },
+            {
+              "text": "Tengo dudas, pero confío en los organismos que las supervisan.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Creo que hay una falsificación de datos, creo que hay una ocultación de gasto, creo que hay una serie de compromisos […] que desconocemos.",
+          "verified": true,
+          "source": {
+            "start": "00:22:14",
+            "end": "00:22:52"
+          }
+        },
+        {
+          "id": "z03-t03",
+          "type": "choice",
+          "question": "El problema de las pensiones tiene una solución muy complicada. ¿A qué te comprometes tú?",
+          "options": [
+            {
+              "text": "A actualizar las pensiones con el IPC y a buscar la viabilidad del sistema público.",
+              "kind": "real"
+            },
+            {
+              "text": "A actualizar las pensiones con el IPC solo si las cuentas lo permiten.",
+              "kind": "partial"
+            },
+            {
+              "text": "A congelar las pensiones más altas para subir las mínimas.",
+              "kind": "false"
+            },
+            {
+              "text": "A complementar el sistema público con planes privados obligatorios.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo me comprometo a la actualización de las pensiones de acuerdo con el índice de precios al consumo.",
+          "verified": true,
+          "source": {
+            "start": "00:23:04",
+            "end": "00:23:26"
+          }
+        },
+        {
+          "id": "z03-t04",
+          "type": "choice",
+          "question": "¿Vas a retrasar la edad de jubilación más allá de los 67 años?",
+          "options": [
+            {
+              "text": "No de forma obligatoria: 67 años y punto. Quien quiera seguir, podrá hacerlo.",
+              "kind": "real"
+            },
+            {
+              "text": "No lo tengo previsto, pero tampoco puedo descartarlo.",
+              "kind": "partial"
+            },
+            {
+              "text": "Sí, de forma gradual hasta los 70, como en otros países europeos.",
+              "kind": "false"
+            },
+            {
+              "text": "No: mi objetivo es volver a la jubilación a los 65 años.",
+              "kind": "false"
+            }
+          ],
+          "quote": "No tenemos previsto ampliar obligatoriamente la edad de jubilación después de los 67.",
+          "verified": true,
+          "context": "Propuso que quien quiera seguir trabajando pueda cobrar parte de la pensión junto al sueldo.",
+          "source": {
+            "start": "00:23:30",
+            "end": "00:25:14"
+          }
+        },
+        {
+          "id": "z03-t05",
+          "type": "complete",
+          "question": "«Año 2018, gasto en absentismo: 13.000 millones. Año 2025: más de ___ millones.»",
+          "options": [
+            {
+              "text": "30.000",
+              "kind": "real"
+            },
+            {
+              "text": "18.000",
+              "kind": "false"
+            },
+            {
+              "text": "22.000",
+              "kind": "false"
+            },
+            {
+              "text": "45.000",
+              "kind": "false"
+            }
+          ],
+          "quote": "Año 2018, gasto en absentismo […] 13.000 millones; año 2025, más de 30.000 millones.",
+          "verified": false,
+          "source": {
+            "start": "00:25:52",
+            "end": "00:26:16"
+          }
+        },
+        {
+          "id": "z03-t06",
+          "type": "true_false",
+          "question": "Los verificadores corrigieron a Feijóo el dato que dio sobre las bajas médicas de los autónomos.",
+          "options": [
+            {
+              "text": "Verdadero",
+              "kind": "real"
+            },
+            {
+              "text": "Falso",
+              "kind": "false"
+            }
+          ],
+          "quote": "Te agradezco esa rectificación.",
+          "verified": false,
+          "context": "Feijóo situó las bajas de los autónomos en torno al 4 %; los verificadores indicaron que rondan el 1 %.",
+          "source": {
+            "start": "00:26:22",
+            "end": "00:28:48"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-04",
+      "title": "Autónomos e impuestos",
+      "intro": "Quiero ir al tema de los autónomos, que siempre me ha indignado. ¿Qué vas a hacer con ellos?",
+      "keyIdeas": [
+        "Su planteamiento es bajar impuestos, pero dice que antes necesita conocer el estado de las cuentas.",
+        "Propone que los autónomos que facturan poco no facturen IVA.",
+        "Bonificaciones de cuota al contratar y durante el permiso de maternidad.",
+        "Sobre hacer opcionales las cuotas: «es complicado económicamente»."
+      ],
+      "turns": [
+        {
+          "id": "z04-t01",
+          "type": "choice",
+          "question": "Has dicho que hay que bajar los impuestos. ¿«Tenéis que bajarlos» o «los vais a bajar»?",
+          "options": [
+            {
+              "text": "Mi planteamiento es bajarlos, pero antes necesito saber cómo están las cuentas.",
+              "kind": "real"
+            },
+            {
+              "text": "Los bajaré todos desde el primer día, sin condiciones.",
+              "kind": "false"
+            },
+            {
+              "text": "No los bajaré: me basta con comprometerme a no subirlos.",
+              "kind": "false"
+            },
+            {
+              "text": "Solo bajaré los que pagan las rentas más bajas.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Mi planteamiento es clarísimo: bajar los impuestos, pero también digo […] cómo es el estado de las cuentas.",
+          "verified": false,
+          "source": {
+            "start": "00:21:58",
+            "end": "00:22:20"
+          }
+        },
+        {
+          "id": "z04-t02",
+          "type": "choice",
+          "question": "¿Qué harás con el autónomo que lleva 12 años y factura 1.400 euros?",
+          "options": [
+            {
+              "text": "No facturará IVA: es una directiva europea que el Gobierno no ha transpuesto.",
+              "kind": "real"
+            },
+            {
+              "text": "Tendrá cuota cero durante los dos próximos años.",
+              "kind": "false"
+            },
+            {
+              "text": "Pagará una cuota a la mitad mientras no llegue al salario mínimo.",
+              "kind": "false"
+            },
+            {
+              "text": "Podrá deducirse la cuota entera en el impuesto de la renta.",
+              "kind": "false"
+            }
+          ],
+          "quote": "No facturarán IVA y por tanto tendrán un 21 % de margen, bien para bajar sus precios […] o bien para mejorar sus resultados.",
+          "verified": true,
+          "source": {
+            "start": "00:29:36",
+            "end": "00:30:00"
+          }
+        },
+        {
+          "id": "z04-t03",
+          "type": "choice",
+          "question": "¿Qué propones para el autónomo que contrate a otro autónomo?",
+          "options": [
+            {
+              "text": "El autónomo contratado no pagará la cuota.",
+              "kind": "real"
+            },
+            {
+              "text": "El contratante dejará de pagar su propia cuota un año.",
+              "kind": "false"
+            },
+            {
+              "text": "Los dos pagarán media cuota de forma indefinida.",
+              "kind": "false"
+            },
+            {
+              "text": "El Estado pagará el primer año de sueldo del contratado.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Un autónomo que contrate a otro, ese autónomo contratado no pagará la cuota.",
+          "verified": true,
+          "source": {
+            "start": "00:29:52",
+            "end": "00:30:36"
+          }
+        },
+        {
+          "id": "z04-t04",
+          "type": "choice",
+          "question": "¿Se te ha pasado por la cabeza hacer opcionales las cuotas para el autónomo al que no le va bien?",
+          "options": [
+            {
+              "text": "No me comprometo: es complicado económicamente.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí: serán voluntarias para quien gane poco.",
+              "kind": "false"
+            },
+            {
+              "text": "No: sin cuota no hay pensión, y no lo tocaré.",
+              "kind": "false"
+            },
+            {
+              "text": "Sí, lo llevo en mi programa electoral.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Es complicado económicamente.",
+          "verified": true,
+          "source": {
+            "start": "00:31:02",
+            "end": "00:31:30"
+          }
+        },
+        {
+          "id": "z04-t05",
+          "type": "choice",
+          "question": "Dices que el Gobierno ha hecho una «trampa» con los impuestos de los trabajadores. ¿Cuál?",
+          "options": [
+            {
+              "text": "No actualizar la tarifa del impuesto de la renta con la inflación.",
+              "kind": "real"
+            },
+            {
+              "text": "Subir el IVA de los productos básicos sin anunciarlo.",
+              "kind": "false"
+            },
+            {
+              "text": "Crear impuestos nuevos llamándolos tasas.",
+              "kind": "false"
+            },
+            {
+              "text": "Subir las cotizaciones solo a los salarios más altos.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Han hecho una trampa, que es no actualizar la tarifa del impuesto de la renta con la inflación.",
+          "verified": true,
+          "source": {
+            "start": "00:31:30",
+            "end": "00:32:14"
+          }
+        },
+        {
+          "id": "z04-t06",
+          "type": "choice",
+          "question": "¿Qué propones para la baja de quien está con un cáncer, en radio o en quimio?",
+          "options": [
+            {
+              "text": "Que en patologías tan graves se cobre el 100 %, y luchar contra el fraude laboral.",
+              "kind": "real"
+            },
+            {
+              "text": "Que la decisión quede en manos de cada convenio colectivo.",
+              "kind": "false"
+            },
+            {
+              "text": "Que se cobre el 100 % en cualquier baja, sea cual sea la causa.",
+              "kind": "false"
+            },
+            {
+              "text": "Que una mutua revise esas bajas cada tres meses.",
+              "kind": "false"
+            }
+          ],
+          "quote": "En esas patologías absolutamente invalidantes, patologías que ponen en riesgo la vida de las personas, pues debemos de pagar el 100 %.",
+          "verified": true,
+          "source": {
+            "start": "00:32:14",
+            "end": "00:32:58"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-05",
+      "title": "Deuda y Defensa",
+      "intro": "Has criticado mucho a Sánchez por la deuda. Vamos a hablar de la tuya, y del gasto en Defensa.",
+      "keyIdeas": [
+        "Explica la deuda gallega por un presupuesto heredado que califica de falso y por la crisis.",
+        "Sostiene que la deuda se paga y que su partido habría logrado superávit.",
+        "Critica que Sánchez callara en la OTAN: él habría pedido más plazo para el 3,5 %.",
+        "Promete auditar el gasto y decir a los aliados a qué cifra puede llegar."
+      ],
+      "turns": [
+        {
+          "id": "z05-t01",
+          "type": "choice",
+          "question": "La deuda de Galicia pasó de 4.000 a 12.000 millones contigo. ¿Cómo lo explicas si criticas la de Sánchez?",
+          "options": [
+            {
+              "text": "Heredé un presupuesto falso y Galicia fue de las que menos aumentaron su deuda.",
+              "kind": "real"
+            },
+            {
+              "text": "Esa cifra es falsa: dejé la deuda donde la encontré.",
+              "kind": "false"
+            },
+            {
+              "text": "Fue decisión mía: endeudarse para invertir es buena política.",
+              "kind": "false"
+            },
+            {
+              "text": "Esa deuda la generó el Gobierno central, no la Xunta.",
+              "kind": "false"
+            }
+          ],
+          "quote": "El presupuesto era falso: los ingresos eran 8.000 y ahí solo había un agujero de 2.000 millones.",
+          "verified": true,
+          "source": {
+            "start": "00:33:38",
+            "end": "00:34:14"
+          }
+        },
+        {
+          "id": "z05-t02",
+          "type": "complete",
+          "question": "«Lo que hice fue un enorme ajuste del gasto corriente […] redujimos el ___ de los altos cargos.»",
+          "options": [
+            {
+              "text": "50 %",
+              "kind": "real"
+            },
+            {
+              "text": "10 %",
+              "kind": "false"
+            },
+            {
+              "text": "25 %",
+              "kind": "false"
+            },
+            {
+              "text": "75 %",
+              "kind": "false"
+            }
+          ],
+          "quote": "Dije: mire, en la Xunta de Galicia sobra el 50 % de los altos cargos, y redujimos el 50 % de los altos cargos.",
+          "verified": false,
+          "source": {
+            "start": "00:34:14",
+            "end": "00:34:42"
+          }
+        },
+        {
+          "id": "z05-t03",
+          "type": "choice",
+          "question": "Hay economistas que relativizan el problema de la deuda. ¿Se paga o no se paga?",
+          "options": [
+            {
+              "text": "Claro que se paga: gastamos unos 40.000 millones al año solo en intereses.",
+              "kind": "real"
+            },
+            {
+              "text": "No se paga nunca: se refinancia, y por eso no me preocupa.",
+              "kind": "false"
+            },
+            {
+              "text": "Solo la pagan los países pequeños; España tiene margen.",
+              "kind": "false"
+            },
+            {
+              "text": "Se pagará sola cuando la economía vuelva a crecer.",
+              "kind": "false"
+            }
+          ],
+          "quote": "¿Cómo que la deuda no se paga? ¿Pero si la deuda es el mejor negocio de los bancos?",
+          "verified": true,
+          "context": "Cifró en unos 40.000–42.000 millones el gasto anual en intereses.",
+          "source": {
+            "start": "00:36:44",
+            "end": "00:37:04"
+          }
+        },
+        {
+          "id": "z05-t04",
+          "type": "choice",
+          "question": "¿Tú crees que en España se puede conseguir un superávit?",
+          "options": [
+            {
+              "text": "En esta legislatura, sin duda: yo lo logré en mis últimos presupuestos en Galicia.",
+              "kind": "real"
+            },
+            {
+              "text": "No a corto plazo: primero hay que frenar el déficit.",
+              "kind": "false"
+            },
+            {
+              "text": "Solo si Europa condona parte de la deuda de la pandemia.",
+              "kind": "false"
+            },
+            {
+              "text": "Sí, pero haría falta subir impuestos y no pienso hacerlo.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo he conseguido un superávit en los últimos presupuestos de Galicia, y estaba renovando todo el servicio de salud.",
+          "verified": true,
+          "source": {
+            "start": "00:37:14",
+            "end": "00:38:22"
+          }
+        },
+        {
+          "id": "z05-t05",
+          "type": "choice",
+          "question": "Sánchez no se comprometió al 3,5 % en Defensa tras la cumbre de la OTAN. ¿Qué habrías hecho tú?",
+          "options": [
+            {
+              "text": "Decir dentro lo mismo que fuera: pedir más plazo para el 3,5 y revisarlo en 2029.",
+              "kind": "real"
+            },
+            {
+              "text": "Firmar el 3,5 % sin condiciones: los compromisos se cumplen.",
+              "kind": "false"
+            },
+            {
+              "text": "Negarme en la propia reunión, delante de todos los aliados.",
+              "kind": "false"
+            },
+            {
+              "text": "Abstenerme y remitir la decisión al Congreso.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Pido mayor plazo para conseguir el 3,5; en todo caso quedamos en revisarlo en el año 2029.",
+          "verified": true,
+          "source": {
+            "start": "00:38:58",
+            "end": "00:39:27"
+          }
+        },
+        {
+          "id": "z05-t06",
+          "type": "choice",
+          "question": "Cuando puedas, ¿acabarás subiendo el gasto en Defensa al 3,5 %?",
+          "options": [
+            {
+              "text": "Haré una auditoría y diré a los aliados a qué gasto podemos llegar, sin mentir.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí, llegaré al 3,5 % antes de acabar la legislatura.",
+              "kind": "false"
+            },
+            {
+              "text": "No: España no pasará del 2 % mientras yo gobierne.",
+              "kind": "false"
+            },
+            {
+              "text": "Lo someteré a votación en el Congreso antes de decidir.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Si no puedo llegar al 2,4, pues me quedaré en el 2,3. Lo que no voy a hacer es mentir.",
+          "verified": true,
+          "source": {
+            "start": "00:39:27",
+            "end": "00:40:07"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-06",
+      "title": "Ceuta y Marruecos",
+      "intro": "Vamos con la crisis de Ceuta. Si hubieras sido presidente, ¿qué habrías hecho?",
+      "keyIdeas": [
+        "Dice que habría actuado antes, con los informes de inteligencia en la mano.",
+        "Su secuencia: contacto con Marruecos, escalada a la Unión Europea y despliegue previo del Ejército.",
+        "No contesta si daría orden de disparar: lo llama «una trampa».",
+        "Responsabiliza a Marruecos y defiende diplomacia con firmeza."
+      ],
+      "turns": [
+        {
+          "id": "z06-t01",
+          "type": "choice",
+          "question": "Si hubieras sido presidente durante la crisis de Ceuta, ¿qué habrías hecho exactamente?",
+          "options": [
+            {
+              "text": "Primero, hacer caso a los informes de inteligencia y contactar con el Gobierno marroquí.",
+              "kind": "real"
+            },
+            {
+              "text": "Primero, cerrar la frontera y suspender las relaciones con Marruecos.",
+              "kind": "false"
+            },
+            {
+              "text": "Primero, convocar al Congreso para declarar el estado de alarma.",
+              "kind": "false"
+            },
+            {
+              "text": "Primero, pedir a la OTAN que interviniera en la frontera.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Lo primero que hubiera hecho es ponerme en contacto con el Gobierno marroquí.",
+          "verified": true,
+          "source": {
+            "start": "00:41:42",
+            "end": "00:42:25"
+          }
+        },
+        {
+          "id": "z06-t02",
+          "type": "choice",
+          "question": "Según tu plan para Ceuta, ¿qué harías si Marruecos no responde?",
+          "options": [
+            {
+              "text": "Escalarlo a la Unión Europea y avisar de que despliego el Ejército en la frontera.",
+              "kind": "real"
+            },
+            {
+              "text": "Romper relaciones diplomáticas y cerrar el espacio aéreo.",
+              "kind": "false"
+            },
+            {
+              "text": "Esperar a la investigación judicial antes de mover ficha.",
+              "kind": "false"
+            },
+            {
+              "text": "Pedir la mediación de Estados Unidos ante Rabat.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Avisaría a Marruecos de que yo voy a desplegar el Ejército en la frontera.",
+          "verified": true,
+          "source": {
+            "start": "00:42:25",
+            "end": "00:43:20"
+          }
+        },
+        {
+          "id": "z06-t03",
+          "type": "choice",
+          "question": "Si la entrada ya es imparable, ¿das orden al Ejército de disparar si hace falta?",
+          "options": [
+            {
+              "text": "Eso es una trampa: el Ejército hay que desplegarlo antes de la invasión.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí: la integridad territorial está por encima de todo.",
+              "kind": "false"
+            },
+            {
+              "text": "No, nunca: son personas y jamás daría esa orden.",
+              "kind": "false"
+            },
+            {
+              "text": "Esa decisión corresponde a los mandos militares, no a mí.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Eso es una trampa […] el Ejército hay que desplegarlo con anterioridad, obviamente, a la invasión.",
+          "verified": true,
+          "context": "No llegó a contestar si daría esa orden.",
+          "source": {
+            "start": "00:44:00",
+            "end": "00:44:44"
+          }
+        },
+        {
+          "id": "z06-t04",
+          "type": "choice",
+          "question": "¿Para ti quién es el responsable de lo ocurrido en Ceuta?",
+          "options": [
+            {
+              "text": "Marruecos, por acción, por omisión o por las dos cosas.",
+              "kind": "real"
+            },
+            {
+              "text": "Las mafias, que actuaron al margen de los gobiernos.",
+              "kind": "false"
+            },
+            {
+              "text": "La Unión Europea, que ha dejado sola a España.",
+              "kind": "false"
+            },
+            {
+              "text": "Nadie todavía: hay que esperar a la investigación.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Marruecos, claro. Por acción o por omisión, o por las dos cosas.",
+          "verified": false,
+          "source": {
+            "start": "00:45:28",
+            "end": "00:45:49"
+          }
+        },
+        {
+          "id": "z06-t05",
+          "type": "choice",
+          "question": "Tras lo de Ceuta, ¿qué era lo primero que había que hacer con Marruecos en lo diplomático?",
+          "options": [
+            {
+              "text": "Llamar a consultas a nuestro embajador en Rabat y convocar a la embajadora marroquí.",
+              "kind": "real"
+            },
+            {
+              "text": "Expulsar a la embajadora de Marruecos en España.",
+              "kind": "false"
+            },
+            {
+              "text": "Cerrar los consulados españoles en Marruecos.",
+              "kind": "false"
+            },
+            {
+              "text": "Enviar al ministro de Exteriores a negociar a Rabat.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Lo primero es llamar a consultas a tu embajador en Rabat. Lo segundo es pedir que venga la embajadora.",
+          "verified": true,
+          "source": {
+            "start": "00:46:37",
+            "end": "00:47:18"
+          }
+        },
+        {
+          "id": "z06-t06",
+          "type": "choice",
+          "question": "Si se demuestra que Marruecos participó, ¿qué hacemos? ¿Rompemos relaciones y acuerdos económicos?",
+          "options": [
+            {
+              "text": "Diplomacia con firmeza y mecanismos europeos; si se repite, una crisis sin precedentes.",
+              "kind": "real"
+            },
+            {
+              "text": "Romper relaciones y suspender todos los acuerdos de inmediato.",
+              "kind": "false"
+            },
+            {
+              "text": "Nada que dañe el comercio: Marruecos es un socio imprescindible.",
+              "kind": "false"
+            },
+            {
+              "text": "Llevar a Marruecos ante un tribunal internacional.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Esto conllevará una crisis sin precedentes con el Reino de Marruecos, donde Europa jugará un papel determinante.",
+          "verified": true,
+          "source": {
+            "start": "00:47:37",
+            "end": "00:49:16"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-07",
+      "title": "Inmigración",
+      "intro": "La inmigración preocupa a niveles elevados. He escuchado lo de la «prioridad nacional»: vamos a concretar.",
+      "keyIdeas": [
+        "De entrada esquiva la pregunta: «la prioridad nacional es cambiar el gobierno».",
+        "Afirma que exigir solo la nacionalidad para una ayuda es ilegal en la UE; puntuaría arraigo y cotización.",
+        "Ingreso mínimo vital ligado a aceptar un empleo, con reducción hasta cero si se rechaza.",
+        "Retorno para quien entre de forma irregular, pero legalizar a quien trabaja en negro."
+      ],
+      "turns": [
+        {
+          "id": "z07-t01",
+          "type": "choice",
+          "question": "¿Quién tendría prioridad ante una ayuda: un español que nunca cotizó o un extranjero que lleva 20 años cotizando?",
+          "options": [
+            {
+              "text": "La prioridad nacional es cambiar el Gobierno.",
+              "kind": "real"
+            },
+            {
+              "text": "El español: la nacionalidad va siempre por delante.",
+              "kind": "false"
+            },
+            {
+              "text": "El extranjero: quien cotiza se ha ganado la ayuda.",
+              "kind": "false"
+            },
+            {
+              "text": "Los dos por igual: las ayudas no miran el pasaporte.",
+              "kind": "false"
+            }
+          ],
+          "quote": "La prioridad nacional es cambiar el gobierno.",
+          "verified": true,
+          "context": "Fue su primera respuesta; después explicó que valoraría criterios como el arraigo.",
+          "source": {
+            "start": "00:49:39",
+            "end": "00:49:51"
+          }
+        },
+        {
+          "id": "z07-t02",
+          "type": "choice",
+          "question": "¿Qué le vas a pedir a quien venga a vivir a España?",
+          "options": [
+            {
+              "text": "Que aporte, aprenda nuestro idioma, respete nuestras leyes y se integre.",
+              "kind": "real"
+            },
+            {
+              "text": "Que tenga un contrato firmado antes de entrar en el país.",
+              "kind": "false"
+            },
+            {
+              "text": "Que acredite ingresos suficientes para no pedir ayudas.",
+              "kind": "false"
+            },
+            {
+              "text": "Que apruebe un examen de cultura y de Constitución.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Voy a pedirle que venga a España a aportar, a aprender nuestro idioma, a respetar nuestras leyes y a integrarse socialmente.",
+          "verified": true,
+          "source": {
+            "start": "00:50:19",
+            "end": "00:51:02"
+          }
+        },
+        {
+          "id": "z07-t03",
+          "type": "choice",
+          "question": "¿Pero qué pesa más para una ayuda social: la nacionalidad o la cotización?",
+          "options": [
+            {
+              "text": "Exigir solo la nacionalidad es ilegal en la UE; puntuaré los años de censo.",
+              "kind": "real"
+            },
+            {
+              "text": "La nacionalidad: cambiaré la ley para que sea el primer criterio.",
+              "kind": "false"
+            },
+            {
+              "text": "La cotización: es lo único que debe contar.",
+              "kind": "false"
+            },
+            {
+              "text": "Ninguna de las dos: las ayudas se darán solo según la renta.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Lo hemos estudiado. La conclusión es que es ilegal. Dentro de la Unión Europea, dentro de los tratados de la Unión Europea, no puedes hacer eso.",
+          "verified": true,
+          "source": {
+            "start": "00:51:13",
+            "end": "00:52:10"
+          }
+        },
+        {
+          "id": "z07-t04",
+          "type": "choice",
+          "question": "¿Les vas a quitar el ingreso mínimo vital a quienes lo cobran sin haber trabajado?",
+          "options": [
+            {
+              "text": "Tendrán que aceptar un empleo; si se niegan de forma reiterada, la ayuda bajará a cero.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí, de inmediato: quien no ha trabajado no debe cobrarlo.",
+              "kind": "false"
+            },
+            {
+              "text": "No: es un derecho y no lo voy a condicionar a nada.",
+              "kind": "false"
+            },
+            {
+              "text": "Lo sustituiré por un cheque de formación profesional.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Si no se quieren, y de forma reiterada, emplear, evidentemente se le irá disminuyendo la ayuda hasta el cero.",
+          "verified": true,
+          "source": {
+            "start": "00:52:10",
+            "end": "00:52:55"
+          }
+        },
+        {
+          "id": "z07-t05",
+          "type": "choice",
+          "question": "¿Qué tipo de inmigrante mandarías a un tercer país?",
+          "options": [
+            {
+              "text": "A quien entre de forma irregular; no voy a hacer distinciones.",
+              "kind": "real"
+            },
+            {
+              "text": "Solo a quienes hayan cometido delitos graves.",
+              "kind": "false"
+            },
+            {
+              "text": "A nadie: esa fórmula ha fracasado en otros países.",
+              "kind": "false"
+            },
+            {
+              "text": "A quienes lleven más de un año sin trabajar.",
+              "kind": "false"
+            }
+          ],
+          "quote": "¿Que entren de forma irregular? Yo no voy a hacer distinciones.",
+          "verified": true,
+          "context": "Defendió el reglamento europeo de retorno y los acuerdos con terceros países.",
+          "source": {
+            "start": "00:54:00",
+            "end": "00:54:24"
+          }
+        },
+        {
+          "id": "z07-t06",
+          "type": "choice",
+          "question": "¿Y si esa persona está trabajando en negro, sin contrato?",
+          "options": [
+            {
+              "text": "Soy partidario de legalizarlo; otra cosa es la sanción al empleador.",
+              "kind": "real"
+            },
+            {
+              "text": "Se tiene que ir igual: sin contrato no hay permiso.",
+              "kind": "false"
+            },
+            {
+              "text": "Sancionaría a los dos, al trabajador y al empleador.",
+              "kind": "false"
+            },
+            {
+              "text": "Le daría un año para conseguir un contrato legal.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo soy partidario de legalizar a un señor que tiene un contrato en negro. […] Otra cosa es la sanción a la que le pueda meter al empleador.",
+          "verified": true,
+          "source": {
+            "start": "00:54:39",
+            "end": "00:55:10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-08",
+      "title": "La foto y la Gürtel",
+      "intro": "Ahora te voy a preguntar por cosas delicadas de tu vida política. Marcial Dorado. Ya lo sabías.",
+      "keyIdeas": [
+        "Dice que conoció a Marcial Dorado cuando no se le relacionaba con el narcotráfico, sino con el contrabando de tabaco.",
+        "Afirma que cortó la relación al saber que tenía un juicio pendiente y que lo explicó en el Parlamento gallego.",
+        "Sobre la Gürtel: se juzgó, «nos costó el gobierno» y le repugnó la actitud del tesorero.",
+        "No sabe si habría pedido la dimisión de Rajoy."
+      ],
+      "turns": [
+        {
+          "id": "z08-t01",
+          "type": "choice",
+          "question": "Cuéntame la historia de la foto con Marcial Dorado. ¿Qué sabías de él?",
+          "options": [
+            {
+              "text": "Lo conocí cuando no tenía nada que ver con el narcotráfico; había contrabando de tabaco.",
+              "kind": "real"
+            },
+            {
+              "text": "No sabía nada de él: coincidimos una sola vez.",
+              "kind": "false"
+            },
+            {
+              "text": "Sabía a qué se dedicaba, y fue un error que asumo.",
+              "kind": "false"
+            },
+            {
+              "text": "Esa foto está manipulada: nunca estuve en ese barco.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Expliqué que conocía a esta persona cuando no tenía nada que ver con el narcotráfico.",
+          "verified": true,
+          "source": {
+            "start": "00:58:26",
+            "end": "00:59:35"
+          }
+        },
+        {
+          "id": "z08-t02",
+          "type": "choice",
+          "question": "¿Erais amigos? ¿Cómo era esa relación?",
+          "options": [
+            {
+              "text": "Me lo presentó un compañero de la Xunta y corté al ver que tenía un juicio pendiente.",
+              "kind": "real"
+            },
+            {
+              "text": "Éramos amigos de la infancia y nos distanciamos con los años.",
+              "kind": "false"
+            },
+            {
+              "text": "Era un contacto del partido al que vi en un par de mítines.",
+              "kind": "false"
+            },
+            {
+              "text": "Fue una relación profesional por mi cargo en la sanidad.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Esta persona me la presentó un compañero de la Xunta de Galicia, que tenía una relación de amistad con él.",
+          "verified": true,
+          "source": {
+            "start": "01:00:30",
+            "end": "01:01:14"
+          }
+        },
+        {
+          "id": "z08-t03",
+          "type": "choice",
+          "question": "¿Qué hiciste cuando se publicaron las fotos?",
+          "options": [
+            {
+              "text": "Pedí comparecer en el Parlamento gallego y di allí las explicaciones.",
+              "kind": "real"
+            },
+            {
+              "text": "Me querellé contra el periódico que las publicó.",
+              "kind": "false"
+            },
+            {
+              "text": "Guardé silencio hasta que pasaron las elecciones.",
+              "kind": "false"
+            },
+            {
+              "text": "Puse mi cargo a disposición de mi partido.",
+              "kind": "false"
+            }
+          ],
+          "quote": "En cuanto salieron unas fotos, yo he pedido comparecer en el Parlamento, que es donde tenía que comparecer.",
+          "verified": true,
+          "source": {
+            "start": "00:58:26",
+            "end": "00:58:57"
+          }
+        },
+        {
+          "id": "z08-t04",
+          "type": "complete",
+          "question": "«Yo soy responsable de mi ___. Respondo por ella.»",
+          "options": [
+            {
+              "text": "biografía",
+              "kind": "real"
+            },
+            {
+              "text": "agenda",
+              "kind": "false"
+            },
+            {
+              "text": "palabra",
+              "kind": "false"
+            },
+            {
+              "text": "gestión",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo soy responsable de mi biografía. Respondo por ella.",
+          "verified": true,
+          "source": {
+            "start": "00:59:59",
+            "end": "01:00:24"
+          }
+        },
+        {
+          "id": "z08-t05",
+          "type": "choice",
+          "question": "El caso Gürtel fue gravísimo para tu partido. ¿Qué dices de él?",
+          "options": [
+            {
+              "text": "Se juzgó, nos costó el Gobierno y me repugnó la actitud del tesorero.",
+              "kind": "real"
+            },
+            {
+              "text": "Fue un montaje: el PP nunca se financió de forma irregular.",
+              "kind": "false"
+            },
+            {
+              "text": "Es pasado, y no respondo por lo que hicieron otros.",
+              "kind": "false"
+            },
+            {
+              "text": "Fue grave, pero no tuvo ningún coste político para el PP.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo me avergoncé, y lo dije, que me repugnaba la actitud del tesorero de mi partido.",
+          "verified": false,
+          "source": {
+            "start": "01:04:31",
+            "end": "01:05:30"
+          }
+        },
+        {
+          "id": "z08-t06",
+          "type": "choice",
+          "question": "Si hubieras estado en la oposición, ¿habrías pedido la dimisión de Rajoy por la Gürtel?",
+          "options": [
+            {
+              "text": "No lo sé: tendría que ver los datos, y a Rajoy nadie le pudo implicar.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí: es lo que exijo ahora y lo habría exigido entonces.",
+              "kind": "false"
+            },
+            {
+              "text": "No: Rajoy no tenía nada que ver y todo el mundo lo sabía.",
+              "kind": "false"
+            },
+            {
+              "text": "Esa pregunta no tiene sentido: Rajoy ya dejó el Gobierno.",
+              "kind": "false"
+            }
+          ],
+          "quote": "No lo sé, te lo digo claramente.",
+          "verified": true,
+          "source": {
+            "start": "01:07:00",
+            "end": "01:07:34"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-09",
+      "title": "Koldo y Ayuso",
+      "intro": "Una noticia de hace pocos días, y después hablamos de otro peso pesado de tu partido.",
+      "keyIdeas": [
+        "Considera normales los contactos entre abogados y dice no saber con cuáles habla el del PP.",
+        "Niega cualquier ofrecimiento de dinero del PP y recuerda que pidieron 30 años de cárcel para Koldo.",
+        "Ayuso es «un activo» y niega que hayan conseguido dividir al PP.",
+        "Evita valorar el precio del inmueble de la Comunidad de Madrid."
+      ],
+      "turns": [
+        {
+          "id": "z09-t01",
+          "type": "choice",
+          "question": "El PP negó y luego reconoció una reunión de su abogado con el de Koldo. ¿Qué sabes tú de esto?",
+          "options": [
+            {
+              "text": "Es normal que los abogados hablen entre sí; yo no sé con cuáles habla el nuestro.",
+              "kind": "real"
+            },
+            {
+              "text": "Fue una orden mía para conocer la estrategia de la defensa.",
+              "kind": "false"
+            },
+            {
+              "text": "Esa reunión nunca existió: es un bulo.",
+              "kind": "false"
+            },
+            {
+              "text": "Me enteré por la prensa y aparté al abogado ese mismo día.",
+              "kind": "false"
+            }
+          ],
+          "quote": "No tengo ni idea de con qué abogados habla el abogado que está representando al PP.",
+          "verified": false,
+          "source": {
+            "start": "01:09:17",
+            "end": "01:10:32"
+          }
+        },
+        {
+          "id": "z09-t02",
+          "type": "true_false",
+          "question": "Feijóo dijo que ese abogado ya no trabaja para el PP.",
+          "options": [
+            {
+              "text": "Verdadero",
+              "kind": "false"
+            },
+            {
+              "text": "Falso",
+              "kind": "real"
+            }
+          ],
+          "quote": "No, está con nosotros.",
+          "verified": true,
+          "context": "Explicó que el partido reforzó el equipo con abogados con más experiencia penal.",
+          "source": {
+            "start": "01:10:32",
+            "end": "01:10:59"
+          }
+        },
+        {
+          "id": "z09-t03",
+          "type": "choice",
+          "question": "¿Es falso que el PP ofreciera un millón de euros a Koldo?",
+          "options": [
+            {
+              "text": "Es falso: nadie puede ofrecer ni un euro del PP, y pedimos 30 años de cárcel para él.",
+              "kind": "real"
+            },
+            {
+              "text": "No me consta, pero he abierto una investigación interna.",
+              "kind": "false"
+            },
+            {
+              "text": "Hubo conversaciones, pero nunca se habló de dinero.",
+              "kind": "false"
+            },
+            {
+              "text": "No voy a comentar un asunto que está en los tribunales.",
+              "kind": "false"
+            }
+          ],
+          "quote": "No hay ningún ofrecimiento de dinero de mi partido a nadie. No tiene autorización nadie para ofrecer no un millón, sino un euro del PP.",
+          "verified": true,
+          "source": {
+            "start": "01:11:00",
+            "end": "01:12:21"
+          }
+        },
+        {
+          "id": "z09-t04",
+          "type": "choice",
+          "question": "Desde fuera parece que hay una guerra callada por el liderazgo. ¿Qué opinas de Ayuso?",
+          "options": [
+            {
+              "text": "Ayuso es un activo de mi partido; no han conseguido dividir al PP.",
+              "kind": "real"
+            },
+            {
+              "text": "Es una rival interna, y eso es sano para el partido.",
+              "kind": "false"
+            },
+            {
+              "text": "Prefiero no opinar de compañeros en plena campaña.",
+              "kind": "false"
+            },
+            {
+              "text": "Será mi vicepresidenta si llego a la Moncloa.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Ayuso es un activo de mi partido, la respuesta es sí.",
+          "verified": true,
+          "source": {
+            "start": "01:13:03",
+            "end": "01:14:27"
+          }
+        },
+        {
+          "id": "z09-t05",
+          "type": "complete",
+          "question": "«Somos estilos distintos, por supuesto. Pero el PP no es una ___.»",
+          "options": [
+            {
+              "text": "secta",
+              "kind": "real"
+            },
+            {
+              "text": "empresa",
+              "kind": "false"
+            },
+            {
+              "text": "familia",
+              "kind": "false"
+            },
+            {
+              "text": "dictadura",
+              "kind": "false"
+            }
+          ],
+          "quote": "Que somos estilos distintos, por supuesto. Pero el PP no es una secta.",
+          "verified": true,
+          "source": {
+            "start": "01:14:29",
+            "end": "01:15:04"
+          }
+        },
+        {
+          "id": "z09-t06",
+          "type": "choice",
+          "question": "¿Te parece asumible pagar casi 7 millones de euros por unas oficinas?",
+          "options": [
+            {
+              "text": "No quiero hablar de eso porque no quiero mentir; ¿cuánto cuestan otras sedes?",
+              "kind": "real"
+            },
+            {
+              "text": "Sí: es el precio de mercado en esa zona de Madrid.",
+              "kind": "false"
+            },
+            {
+              "text": "No: me parece un error y así se lo he dicho.",
+              "kind": "false"
+            },
+            {
+              "text": "Es una decisión de la Comunidad y no la conozco.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo no quiero hablar de eso, porque no quiero mentir.",
+          "verified": true,
+          "source": {
+            "start": "01:16:09",
+            "end": "01:16:48"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zone-10",
+      "title": "Ráfaga final",
+      "intro": "Estas tienen un poco de chiste y un poco de «a ver qué me dices».",
+      "keyIdeas": [
+        "Admite que no sabe inglés y que no ha hecho ningún esfuerzo por aprenderlo.",
+        "No quiere llegar al servicio militar obligatorio; ve más riesgo potencial en la frontera sur que en la este.",
+        "Sobre Trump: no entiende mucho de lo que dice, pero no quiere llevarse mal con Estados Unidos.",
+        "Reconoce a Abascal el mérito de crear un partido; define a Sánchez como «una gran decepción»."
+      ],
+      "turns": [
+        {
+          "id": "z10-t01",
+          "type": "complete",
+          "question": "«Yo no sé inglés, pero sé ___.»",
+          "options": [
+            {
+              "text": "gobernar",
+              "kind": "real"
+            },
+            {
+              "text": "escuchar",
+              "kind": "false"
+            },
+            {
+              "text": "negociar",
+              "kind": "false"
+            },
+            {
+              "text": "gestionar",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo no sé inglés, pero sé gobernar.",
+          "verified": true,
+          "source": {
+            "start": "01:18:10",
+            "end": "01:18:22"
+          }
+        },
+        {
+          "id": "z10-t02",
+          "type": "choice",
+          "question": "¿Crees que el presidente de un país de Europa tiene que saber inglés?",
+          "options": [
+            {
+              "text": "Debería saber inglés. No es mi caso, y reconozco que no he hecho ningún esfuerzo.",
+              "kind": "real"
+            },
+            {
+              "text": "No hace falta: para eso están los traductores oficiales.",
+              "kind": "false"
+            },
+            {
+              "text": "Sí, y por eso llevo un año dando clases.",
+              "kind": "false"
+            },
+            {
+              "text": "Lo importante es hablar bien las lenguas de España.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Un presidente o primer ministro español debería de saber inglés. No es mi caso.",
+          "verified": true,
+          "source": {
+            "start": "01:18:22",
+            "end": "01:19:40"
+          }
+        },
+        {
+          "id": "z10-t03",
+          "type": "choice",
+          "question": "Algunos países europeos quieren volver al servicio militar obligatorio. ¿Lo vas a promover?",
+          "options": [
+            {
+              "text": "No quiero llegar a eso: significaría que tenemos un problema máximo.",
+              "kind": "real"
+            },
+            {
+              "text": "Sí, un servicio de seis meses para hombres y mujeres.",
+              "kind": "false"
+            },
+            {
+              "text": "No: es una idea del siglo pasado que no volverá.",
+              "kind": "false"
+            },
+            {
+              "text": "Lo consultaré a los españoles en un referéndum.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo no quiero llegar a eso, porque eso conllevaría que tenemos un problema […] máximo.",
+          "verified": false,
+          "source": {
+            "start": "01:19:56",
+            "end": "01:21:21"
+          }
+        },
+        {
+          "id": "z10-t04",
+          "type": "choice",
+          "question": "Define a Donald Trump.",
+          "options": [
+            {
+              "text": "No entiendo mucho de lo que dice, pero no quiero llevarme mal con Estados Unidos.",
+              "kind": "real"
+            },
+            {
+              "text": "Un aliado ejemplar al que Europa debería imitar.",
+              "kind": "false"
+            },
+            {
+              "text": "Un peligro del que España debe alejarse cuanto antes.",
+              "kind": "false"
+            },
+            {
+              "text": "Prefiero no opinar de dirigentes de otros países.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Yo vivo de defender a mi país, no de meter a mi país en un problema.",
+          "verified": false,
+          "source": {
+            "start": "01:21:28",
+            "end": "01:22:19"
+          }
+        },
+        {
+          "id": "z10-t05",
+          "type": "choice",
+          "question": "Define a Santiago Abascal.",
+          "options": [
+            {
+              "text": "Hizo algo difícil: crear un partido y hacerlo tercera fuerza. Pero yo no soy de Vox.",
+              "kind": "real"
+            },
+            {
+              "text": "Un populista con el que no tengo nada en común.",
+              "kind": "false"
+            },
+            {
+              "text": "Un socio leal con el que comparto casi todo.",
+              "kind": "false"
+            },
+            {
+              "text": "Un político del pasado que ya ha tocado techo.",
+              "kind": "false"
+            }
+          ],
+          "quote": "Abascal es un político que ha hecho algo que no es fácil, que es construir un partido político […] y convertirse en la tercera fuerza política del país.",
+          "verified": true,
+          "source": {
+            "start": "01:22:51",
+            "end": "01:24:02"
+          }
+        }
+      ]
+    }
+  ]
+}

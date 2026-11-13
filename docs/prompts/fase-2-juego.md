@@ -55,7 +55,7 @@ Las siete de `CLAUDE.md`, con los tres tipos de ronda (`choice`, `complete`, `tr
 
 ## Hecho cuando
 
-- `node --test tests/` y `node tools/validate-content.js` pasan.
+- `node --test` y `node tools/validate-content.js` pasan.
 - Con el juego servido en local (`python3 -m http.server 8000`) has comprobado con Playwright (Chromium ya está instalado; no instales otro), a 390×844 y a 1280×800:
   - una partida completa de una zona con 3 certeras (oro, 550 puntos);
   - una batalla con fallos (medalla inferior y cita revelada igualmente);

@@ -56,7 +56,7 @@ Sigue la sección «Dirección de arte» de `CLAUDE.md`.
 
 ## Hecho cuando
 
-- `node --test tests/` y `node tools/validate-content.js` pasan.
+- `node --test` y `node tools/validate-content.js` pasan.
 - Has repetido con Playwright la batería de la Fase 2 más: uso de cada objeto, repaso final y, si hay audio, reproducción de un clip.
 - Has enviado al usuario capturas del título, mapa, batalla y resultado final en móvil y escritorio.
 - Tras la confirmación del usuario, la URL pública carga, se juega una zona entera y la consola no muestra errores.

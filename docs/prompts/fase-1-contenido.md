@@ -39,7 +39,7 @@ Vas a ejecutar la **Fase 1 (Contenido)** del juego descrito en `CLAUDE.md`. En e
 ## Reglas que no puedes saltarte
 
 - Neutralidad: ni las preguntas, ni los distractores, ni los `keyIdeas` valoran si lo que dijo es cierto o acertado.
-- No uses el tramo excluido (01:02:23–01:08:29, insinuación sobre las primarias de Sánchez) ni líneas de «Voz sin identificar».
+- No uses los tramos excluidos (01:02:23–01:04:31 y 01:07:34–01:08:43, insinuación sobre las primarias de Sánchez) ni líneas de «Voz sin identificar».
 - No inventes preguntas fuera del esquema. Si crees que una pregunta del esquema no se sostiene, sustitúyela por otra del mismo tramo y avisa.
 - Textos en español; identificadores en inglés.
 
@@ -59,7 +59,7 @@ Al final imprime un resumen: preguntas por zona, por tipo y número de citas sin
 
 ## Hecho cuando
 
-- `node tools/validate-content.js` y `node --test tests/` pasan.
+- `node tools/validate-content.js` y `node --test` pasan.
 - Has releído las 58 preguntas contra la transcripción una segunda vez, buscando respuestas reales que no se sostienen y distractores que también serían ciertos.
 - Has entregado al usuario un resumen con: cambios respecto al esquema, lista de citas con `verified: false` y dudas abiertas.
 

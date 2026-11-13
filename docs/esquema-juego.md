@@ -7,7 +7,7 @@ Mapa de contenido del juego, extraído de `content/transcript.md`. Las reglas de
 | | |
 |---|---|
 | Entrevistado (jugador) | Alberto Núñez Feijóo, candidato del Partido Popular a la presidencia del Gobierno |
-| Entrevistador (rival) | Jordi, presentador del pódcast (la transcripción lo llama «The Wallprop»: **nombre del programa por confirmar**) |
+| Entrevistador (rival) | Jordi Wild, presentador de The Wild Project (la transcripción escribe «The Wallprop»: **por confirmar**) |
 | Verificadores | Iván Muñoz y Javier Collado; corrigen datos en directo |
 | Contexto | Serie de entrevistas a los candidatos antes de unas elecciones generales, grabada la víspera del inicio de campaña |
 | Duración | 1 h 28 min |
@@ -42,7 +42,7 @@ Datos para la **intro** del juego (00:00:00–00:05:44): hay verificadores en el
 2. **Evasivas**: cuando no contestó a lo que se le preguntaba, la respuesta real lo refleja tal cual («no lo aclara», «no lo sé», «responde con otra cosa»). Es información valiosa para el jugador.
 3. **Correcciones de los verificadores**: se muestran en la revelación cuando existen (zona 3).
 4. **Citas**: se toman de la transcripción corrigiendo solo erratas evidentes de la transcripción automática (ortografía, nombres propios, palabras mal oídas), nunca el sentido. Las marcadas con ⚠ tienen una transcripción dudosa y deben comprobarse con el audio antes de publicarse.
-5. **Excluido del juego**: la insinuación sobre la financiación de las primarias de Pedro Sánchez (01:02:23–01:08:29). Es una acusación no probada contra un tercero que el propio entrevistador cuestiona; no se convierte en pregunta ni en cita. Tampoco se usan como cita las líneas de «Voz sin identificar».
+5. **Excluido del juego**: la insinuación sobre la financiación de las primarias de Pedro Sánchez (01:02:23–01:04:31 y 01:07:34–01:08:43). Es una acusación no probada contra un tercero que el propio entrevistador cuestiona; no se convierte en pregunta ni en cita. Tampoco se usan como cita las líneas de «Voz sin identificar».
 6. **Distractores**: errores razonables (otra cifra, postura más tajante o más tibia, una medida parecida). Nunca posturas ofensivas ni caricaturas.
 7. Cada pregunta se entiende sin haber jugado otras zonas.
 

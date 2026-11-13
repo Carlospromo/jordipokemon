@@ -14,9 +14,9 @@ Un videojuego web de **batallas dialécticas por turnos, con estética de anime 
 ## Estado actual
 
 - Hay transcripción: `content/transcript.md` (automática, con erratas y atribuciones de voz dudosas). **No hay audio todavía.**
-- La entrevista es de Jordi (pódcast) a Alberto Núñez Feijóo, candidato del PP, de 1 h 28 min.
-- El mapa de contenido está definido en `docs/esquema-juego.md`: 10 zonas y 58 preguntas, pendiente del visto bueno del usuario.
-- El desarrollo se hace en tres fases, cada una con su prompt en `docs/prompts/`. Ninguna está empezada.
+- La entrevista es de Jordi Wild (The Wild Project) a Alberto Núñez Feijóo, candidato del PP, de 1 h 28 min. La transcripción escribe mal el nombre del programa; el usuario debe confirmarlo.
+- **Fase 1 terminada:** `content/interview.json` tiene las 10 zonas y las 58 preguntas, y pasa el validador. Hay 10 citas con `verified: false` pendientes de comprobar con el audio.
+- **Siguiente: Fase 2** (`docs/prompts/fase-2-juego.md`). Todavía no hay código del juego.
 
 ## Reglas innegociables
 
@@ -144,8 +144,10 @@ Tipos de ronda, para dar variedad (todos comparten el mismo esquema de datos):
     "interviewer": { "name": "…", "role": "…" },
     "summary": "…",
     "intro": ["…"],              // cuadros de diálogo de la intro
-    "closing": "…",              // alegato final, para el resultado final
-    "version": "…"               // liga el progreso recordado al contenido
+    "closing": { "text": "…", "source": { "start": "…", "end": "…" } },  // alegato final
+    "version": "…",              // liga el progreso recordado al contenido
+    "duration": "01:28:20",
+    "excluded": [{ "start": "…", "end": "…", "reason": "…" }]  // tramos que no se usan
   },
   "zones": [
     {
@@ -212,11 +214,11 @@ tests/               lógica de batalla y puntuación
 
 ```bash
 python3 -m http.server 8000     # servir el juego en local
-node --test tests/              # tests de lógica
+node --test              # tests de lógica
 node tools/validate-content.js  # validar content/interview.json
 ```
 
-(Actualizar esta sección cuando existan los scripts.)
+Requiere Node 20 o superior. No hay dependencias que instalar.
 
 ## Plan de desarrollo
 
