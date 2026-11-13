@@ -13,16 +13,20 @@ Un videojuego web de **batallas por turnos al estilo de los RPG clásicos de cap
 
 ## Estado actual
 
-Repositorio recién creado. Aún **no hay audio ni transcripción**. Nada de contenido de la entrevista puede escribirse hasta que exista `content/transcript.md` (ver "Flujo de contenido").
+- Hay transcripción: `content/transcript.md` (automática, con erratas y atribuciones de voz dudosas). **No hay audio todavía.**
+- La entrevista es de Jordi (pódcast) a Alberto Núñez Feijóo, candidato del PP, de 1 h 28 min.
+- El mapa de contenido está definido en `docs/esquema-juego.md`: 10 zonas y 58 preguntas, pendiente del visto bueno del usuario.
+- El desarrollo se hace en tres fases, cada una con su prompt en `docs/prompts/`. Ninguna está empezada.
 
 ## Reglas innegociables
 
-1. **Fidelidad a la entrevista.** Toda respuesta marcada como correcta, toda cita y todo resumen debe poder rastrearse a un tramo concreto de la transcripción (`source.start` / `source.end`). Si no está en la transcripción, no entra en el juego.
+1. **Fidelidad a la entrevista.** Toda respuesta marcada como correcta, toda cita y todo resumen debe poder rastrearse a un tramo concreto de la transcripción (`source.start` / `source.end`). Si no está en la transcripción, no entra en el juego. Las citas solo corrigen erratas evidentes de la transcripción automática, nunca el sentido; las dudosas llevan `verified: false` hasta comprobarlas con el audio.
 2. **No inventar declaraciones.** Las respuestas incorrectas (distractores) son verosímiles pero nunca se presentan como algo que el entrevistado dijo. Tras cada turno se muestra siempre la respuesta real, se acierte o no.
 3. **No poner en boca del entrevistado nada ofensivo o dañino** como distractor. Los distractores son errores razonables (matices, cifras, posturas contrarias suaves), no caricaturas.
 4. **Arte, nombres, música y textos 100 % originales.** Es un juego "del género", no una copia: nada de sprites, criaturas, nombres, tipografías, sonidos ni interfaz calcados de Pokémon ni de ninguna otra franquicia. Los nombres de este documento (Citadex, Medallas, etc.) son propios.
 5. **Motor y contenido separados.** El motor no contiene ni una frase de la entrevista; todo vive en `content/`. Cambiar de entrevista debe ser cambiar un JSON y unos audios.
-6. **Idioma:** textos del juego y de documentación en español; identificadores de código en inglés.
+6. **Neutralidad y respeto.** Los personajes son personas reales y el tema es político. El juego informa de lo que el entrevistado dijo; no valora si es cierto ni toma partido. Cuando no contestó a una pregunta, se refleja tal cual. Las correcciones de los verificadores se muestran. Representación gráfica sobria, sin caricatura. No se convierten en preguntas ni citas las acusaciones no probadas contra terceros (ver exclusiones en `docs/esquema-juego.md`).
+7. **Idioma:** textos del juego y de documentación en español; identificadores de código en inglés.
 
 ## Diseño del juego
 
@@ -32,7 +36,7 @@ El juego vive en una web: no hay cuentas ni partidas guardadas en las que confia
 
 - **Batallas cortas y autónomas.** Una batalla = un tema = **3 rondas** (3 preguntas), unos 2 minutos. Ninguna batalla depende de otra.
 - **Mapa libre.** Todos los temas están abiertos desde el primer momento. El mapa los numera en el orden real de la entrevista como ruta sugerida, pero el jugador entra en el que quiera y en el orden que quiera.
-- **El jugador decide cuánto juega.** No hay mínimo. Puede hacer una sola batalla o todas. Juego completo: **6–8 temas × 3 rondas = 18–24 preguntas, 12–16 minutos**.
+- **El jugador decide cuánto juega.** No hay mínimo. Puede hacer una sola batalla o todas. Juego completo: **10 temas × 3 rondas = 30 preguntas, unos 20 minutos**.
 - **Se puede salir siempre.** En batalla hay un botón "Mapa" siempre visible; en el mapa, un botón "Terminar entrevista" siempre disponible.
 - **No hay derrota ni "game over".** Toda batalla empezada llega a sus 3 rondas si el jugador quiere: lo importante es que vea las 3 respuestas reales. Lo que varía es la medalla.
 - **Nada bloquea por perder el progreso.** Como todo está abierto, quien vuelva otro día sin progreso guardado puede jugar exactamente igual.
@@ -49,7 +53,7 @@ El juego vive en una web: no hay cuentas ni partidas guardadas en las que confia
 
 1. **Título** — nombre del juego y "Pulsa para empezar". Va directo a la intro (o al mapa si ya hay progreso recordado).
 2. **Intro** — 3–4 cuadros de diálogo: quién es el entrevistado, quién el entrevistador, de qué va la entrevista y cómo se juega. Se puede saltar.
-3. **Mapa de temas** — el centro del juego; se vuelve aquí tras cada batalla. Cada tema muestra título, número de orden en la entrevista, medalla conseguida (o "sin explorar"). Cabecera con el progreso: "Has explorado 3 de 7 temas", puntuación total y acceso al Citadex. Botones "Terminar entrevista" y "Borrar progreso".
+3. **Mapa de temas** — el centro del juego; se vuelve aquí tras cada batalla. Cada tema muestra título, número de orden en la entrevista, medalla conseguida (o "sin explorar"). Cabecera con el progreso: "Has explorado 3 de 10 temas", puntuación total y acceso al Citadex. Botones "Terminar entrevista" y "Borrar progreso".
 4. **Batalla** — 3 rondas (ver abajo).
 5. **Resumen de batalla** — medalla, puntos, las 3 citas reales y las ideas clave del tema. Botones: "Volver al mapa" (principal), "Siguiente tema" (el siguiente sin explorar) y "Repetir".
 6. **Citadex** — citas reales desbloqueadas, por tema, con botón para oír el clip original. Las no desbloqueadas aparecen como "???".
@@ -67,7 +71,7 @@ Una **ronda**:
    - **Respuesta real** → "¡Respuesta certera!": quita 1/3 de la Presión y desbloquea la cita en el Citadex.
    - **Respuesta parcial** (opcional por pregunta: cercana pero imprecisa) → "No es del todo así…": quita 1/6 de la Presión.
    - **Respuesta falsa** → "Eso no fue lo que dijo": la Presión no baja.
-4. **Revelación** (siempre): "Lo que realmente dijo:" + cita literal + clip de audio + una línea de contexto si hace falta. El clip se puede saltar.
+4. **Revelación** (siempre): "Lo que realmente dijo:" + cita + una línea de contexto si hace falta + clip de audio si existe (saltable). El juego funciona completo sin audio.
 
 **Abandonar:** el botón "Mapa" pide una confirmación breve y vuelve al mapa. La batalla en curso se descarta (no puntúa ni da medalla), pero las citas ya reveladas se quedan en el Citadex. Como mucho se pierden 2 minutos.
 
@@ -82,14 +86,13 @@ Una **ronda**:
 
 **Repetir un tema:** siempre permitido. Cada tema tiene un banco de **3 a 6 preguntas**; cada batalla usa 3, dando prioridad a las que el jugador aún no ha visto. Se conserva la mejor medalla y la mejor puntuación.
 
-**Repaso final** (opcional): aparece en el mapa cuando se han explorado todos los temas. Una batalla de 5 rondas con una pregunta de cada tema, sin opción parcial. Es un extra; el juego está completo sin él.
+**Repaso final** (opcional): aparece en el mapa cuando se han explorado todos los temas. Una batalla de 5 rondas con preguntas de temas distintos, sin opción parcial. Es un extra; el juego está completo sin él.
 
 Tipos de ronda, para dar variedad (todos comparten el mismo esquema de datos):
 
 - `choice` — elegir la respuesta real entre 4 (el tipo base).
 - `complete` — completar la cita: la frase real con un hueco y 4 opciones.
 - `true_false` — "¿Dijo esto?": una afirmación, verdadero/falso.
-- `order` — ordenar 3–4 ideas en el orden en que las expuso (para respuestas largas).
 
 ### Puntuación
 
@@ -107,17 +110,16 @@ Tipos de ronda, para dar variedad (todos comparten el mismo esquema de datos):
 - **Exploración** = temas jugados / temas totales.
 - **Fidelidad** = respuestas certeras / preguntas respondidas, contando solo la mejor batalla de cada tema. Junto con la exploración, es la métrica estrella: cuánto conoce el jugador la entrevista.
 - **Rango final**, según temas con medalla de plata u oro sobre el total: Oyente despistado (< 25 %) → Oyente atento (≥ 25 %) → Cronista (≥ 60 %) → Portavoz oficial (100 %). Así el rango premia a la vez explorar y acertar.
-- **Objetos**: en cada batalla se dispone de un uso de *Apuntes* (elimina 2 opciones falsas) y uno de *Repregunta* (oír los primeros 5 s del clip de la respuesta antes de elegir). No se acumulan entre batallas.
+- **Objetos**: en cada batalla se dispone de un uso de *Apuntes* (elimina 2 opciones falsas) y uno de *Repregunta* (oír los primeros 5 s del clip de la respuesta antes de elegir; sin audio, ver las primeras palabras de la cita). No se acumulan entre batallas.
 - Sin temporizador ni bonus de rapidez: se premia entender, no correr.
 
-## Flujo de contenido (audio → juego)
+## Flujo de contenido (transcripción → juego)
 
-1. **Entrada.** El usuario aporta `content/transcript.md` (preferido) y/o el audio en `assets/audio/interview.<ext>`. Formato ideal de la transcripción: una intervención por párrafo, con hablante y marca de tiempo, p. ej. `[00:03:12] ENTREVISTADOR: …`.
-   - Si solo hay audio, transcribirlo primero, guardar el resultado en `content/transcript.md` y **pedir al usuario que revise nombres propios, cifras y hablantes** antes de seguir.
-2. **Análisis** → `content/analysis.md`: quién es quién, tono, lista de bloques temáticos en orden con sus marcas de tiempo, y por bloque las preguntas del entrevistador con la idea central de cada respuesta y las mejores citas literales.
-3. **Diseño de preguntas** → `content/interview.json` (esquema abajo). Orientación: 6–8 zonas (temas), banco de 3–6 turnos por zona (cada batalla usa 3), 12–16 min de juego completo. Un tema con más de 6 preguntas buenas se divide en dos zonas. Cada turno debe entenderse por sí solo, sin haber jugado otros temas. Priorizar las ideas que definen la postura del entrevistado frente a datos anecdóticos.
-4. **Clips de audio.** Cortar del audio original los tramos `source` de cada turno a `assets/audio/clips/<id>.mp3` (script en `tools/`). No editar el contenido de los clips.
-5. **Validación.** `tools/validate-content` comprueba: esquema, exactamente una opción `real` por turno, `source` dentro de la duración del audio, clip existente y que cada `quote` aparece literalmente en la transcripción.
+1. **Fuente de verdad:** `content/transcript.md`. No se edita; las correcciones de erratas se hacen en las citas.
+2. **Mapa de contenido:** `docs/esquema-juego.md` define las 10 zonas, el banco de preguntas (5–6 por zona; cada batalla usa 3), la respuesta real de cada una, su tramo y una cita candidata, además de los criterios y las exclusiones.
+3. **Datos del juego:** `content/interview.json` (esquema abajo), generado en la Fase 1 a partir del mapa. Cada pregunta debe entenderse por sí sola, sin haber jugado otros temas.
+4. **Validación:** `node tools/validate-content.js` comprueba esquema, una única opción `real` por pregunta, límites de longitud, que `source` cae en una intervención del entrevistado y que la cita se corresponde con ese tramo de la transcripción.
+5. **Audio (opcional):** si el usuario aporta `assets/audio/interview.<ext>`, en la Fase 3 se cortan los tramos `source` a `assets/audio/clips/<id>.mp3` sin editar su contenido y se revisan las citas con `verified: false`.
 
 ### Esquema de `content/interview.json`
 
@@ -127,7 +129,10 @@ Tipos de ronda, para dar variedad (todos comparten el mismo esquema de datos):
     "title": "…",
     "interviewee": { "name": "…", "role": "…" },
     "interviewer": { "name": "…", "role": "…" },
-    "summary": "…"
+    "summary": "…",
+    "intro": ["…"],              // cuadros de diálogo de la intro
+    "closing": "…",              // alegato final, para el resultado final
+    "version": "…"               // liga el progreso recordado al contenido
   },
   "zones": [
     {
@@ -138,7 +143,7 @@ Tipos de ronda, para dar variedad (todos comparten el mismo esquema de datos):
       "turns": [                 // banco de 3 a 6; cada batalla usa 3
         {
           "id": "z01-t01",
-          "type": "choice",      // choice | complete | true_false | order
+          "type": "choice",      // choice | complete | true_false
           "question": "…",       // pregunta real del entrevistador (puede condensarse)
           "options": [
             { "text": "…", "kind": "real" },
@@ -146,10 +151,11 @@ Tipos de ronda, para dar variedad (todos comparten el mismo esquema de datos):
             { "text": "…", "kind": "false" },
             { "text": "…", "kind": "false" }
           ],
-          "quote": "…",          // cita LITERAL de la transcripción
+          "quote": "…",          // cita de la transcripción (solo erratas corregidas)
+          "verified": true,      // false si la transcripción es dudosa
           "context": "…",        // opcional, una línea
           "source": { "start": "00:03:12", "end": "00:03:41" },
-          "clip": "assets/audio/clips/z01-t01.mp3"
+          "clip": "assets/audio/clips/z01-t01.mp3"   // opcional, solo si hay audio
         }
       ]
     }
@@ -177,8 +183,10 @@ assets/
   audio/             interview.<ext>, clips/, sfx/
 content/
   transcript.md      fuente de verdad
-  analysis.md
   interview.json
+docs/
+  esquema-juego.md   mapa de contenido: zonas, preguntas, criterios
+  prompts/           un prompt por fase de desarrollo
 tools/               validar contenido, cortar clips
 tests/               lógica de batalla y puntuación
 ```
@@ -199,11 +207,13 @@ node tools/validate-content.js  # validar content/interview.json
 
 ## Plan de desarrollo
 
-1. **Fase 0 — Contenido.** Recibir transcripción/audio → `analysis.md` → proponer al usuario la lista de zonas y preguntas → `interview.json` validado. *No empezar la fase 1 de contenido real sin el visto bueno del usuario a las zonas.*
-2. **Fase 1 — Motor de batalla.** Una batalla de 3 rondas jugable de principio a fin con turnos `choice`, puntuación, medalla, revelación, clip de audio y botón de abandonar. Puede desarrollarse en paralelo con un `interview.sample.json` de contenido ficticio claramente marcado como tal.
-3. **Fase 2 — Juego completo.** Título, intro, mapa libre, resumen de batalla, Citadex, "Terminar entrevista" y resultado final, recuerdo ligero en localStorage.
-4. **Fase 3 — Variedad.** Tipos `complete`, `true_false`, `order`, objetos, banco de preguntas al repetir, repaso final.
-5. **Fase 4 — Pulido.** Arte y sonido originales, animaciones, móvil, accesibilidad, publicación en GitHub Pages.
+Tres fases. Cada una tiene un prompt autónomo en `docs/prompts/` pensado para lanzarse en una sesión nueva; define entregables, restricciones y criterio de "hecho". No se empieza una fase sin haber cerrado la anterior.
+
+| Fase | Prompt | Resultado |
+|---|---|---|
+| 1. Contenido | `docs/prompts/fase-1-contenido.md` | `content/interview.json` con las 58 preguntas y el validador |
+| 2. Juego jugable | `docs/prompts/fase-2-juego.md` | Juego completo de título a resultado final, con lógica testeada y presentación funcional |
+| 3. Pulido y publicación | `docs/prompts/fase-3-pulido-publicacion.md` | Arte y sonido originales, objetos, repaso final, clips si hay audio, GitHub Pages |
 
 ## Forma de trabajar
 
