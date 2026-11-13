@@ -185,4 +185,4 @@ Material extra sin pregunta propia (para ideas clave o Citadex): definición de 
 1. Nombre exacto del programa y del entrevistador tal como deben aparecer en el juego.
 2. Las 10 zonas y sus títulos.
 3. Si habrá **audio**. Sin audio el juego funciona solo con texto; con audio se añaden los clips y se revisan las citas ⚠.
-4. Revisión de las citas ⚠ (14) contra el audio.
+4. Revisión de las citas ⚠ (11) contra el audio.
