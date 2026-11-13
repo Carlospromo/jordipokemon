@@ -4,11 +4,11 @@
 
 ---
 
-Vas a ejecutar la **Fase 2 (Juego jugable)** del juego descrito en `CLAUDE.md`: el juego completo, de la pantalla de título al resultado final, con todo el contenido real y una presentación funcional pero sin arte definitivo.
+Vas a ejecutar la **Fase 2 (Juego jugable)** del juego descrito en `CLAUDE.md`: el juego completo, de la pantalla de título al resultado final, con todo el contenido real y la interfaz ya construida según la «Dirección de arte» de `CLAUDE.md`, aunque con ilustraciones provisionales.
 
 ## Lee antes de empezar
 
-1. `CLAUDE.md` entero: es la especificación. Secciones clave: «Diseño del juego» y «Arquitectura técnica».
+1. `CLAUDE.md` entero: es la especificación. Secciones clave: «Diseño del juego» (incluida «Dirección de arte») y «Arquitectura técnica».
 2. `content/interview.json` (ya validado). No lo modifiques salvo para corregir un error, y en ese caso vuelve a pasar el validador.
 
 ## Qué tienes que entregar
@@ -33,17 +33,19 @@ Las siete de `CLAUDE.md`, con los tres tipos de ronda (`choice`, `complete`, `tr
 1. **Título**.
 2. **Intro** (saltable), con `meta.intro`.
 3. **Mapa**: las 10 zonas abiertas, numeradas, con su medalla o «sin explorar»; cabecera con temas explorados y puntuación total; accesos a Citadex, «Terminar entrevista» y «Borrar progreso» (con confirmación).
-4. **Batalla**: rival arriba a la derecha, jugador abajo a la izquierda, barra de Presión, «Ronda n/3», caja de diálogo con efecto máquina de escribir saltable, menú de opciones, mensaje de resolución, revelación con la cita y el contexto, y botón «Mapa» con confirmación.
+4. **Batalla**: entrevistador y entrevistado enfrentados sobre el fondo del plató, barra de Presión en el HUD, «Ronda n/3», caja de diálogo con efecto máquina de escribir saltable, menú de opciones, mensaje de resolución, revelación con la cita y el contexto, y botón «Mapa» con confirmación.
 5. **Resumen de batalla**: medalla, puntos, las 3 citas, ideas clave; «Volver al mapa», «Siguiente tema» y «Repetir».
 6. **Citadex**: citas por zona; «???» en las no desbloqueadas.
 7. **Resultado final**: exploración, fidelidad, puntuación, medallas, rango, zonas no jugadas solo con su título, `meta.closing`, y vuelta al mapa.
 
 ### Presentación en esta fase
 
-- Lienzo lógico de 480×320 escalado al ancho disponible; usable en móvil vertical (táctil, botones de al menos 44 px) y con teclado (flechas, Enter, Escape para «Mapa»).
-- Estilo retro hecho solo con CSS: paleta limitada, bordes de píxel, tipografía pixel de licencia libre o monoespaciada del sistema. Los personajes pueden ser siluetas o marcadores sencillos; el arte definitivo es de la Fase 3.
+- Escena panorámica 16:9 adaptable; en móvil vertical, escena arriba y diálogo con respuestas abajo. Usable en táctil (botones de al menos 44 px) y con teclado (flechas, Enter, Escape para «Mapa»).
+- Sistema visual definitivo en CSS: variables de color (base nocturna, un acento por personaje, dorado), HUD de paneles translúcidos y angulados, tipografía sans geométrica de licencia libre o del sistema, barras con degradado, bandas de cine y transiciones entre pantallas.
+- Personajes y fondos provisionales: siluetas o ilustraciones SVG sencillas en `assets/art/`, con los mismos nombres de archivo y proporciones que usará el arte definitivo de la Fase 3, para que sustituirlos no exija tocar código.
+- Animaciones básicas ya presentes: entrada de personajes, cambio de plano hacia quien habla, bajada de la barra de Presión y mensaje de resolución.
 - Sin audio. Si una pregunta no tiene `clip`, la revelación muestra solo el texto.
-- Nada que copie la interfaz, tipografía, sprites o sonidos de Pokémon ni de otra franquicia.
+- Nada que copie la interfaz, tipografía, personajes o sonidos de un anime, JRPG u otra franquicia concreta.
 
 ## Restricciones técnicas
 
@@ -66,4 +68,4 @@ Las siete de `CLAUDE.md`, con los tres tipos de ronda (`choice`, `complete`, `tr
 
 ## Fuera de alcance
 
-Arte y sonido definitivos, clips de audio, objetos (*Apuntes*, *Repregunta*), repaso final, publicación.
+Ilustraciones definitivas, efectos cinematográficos avanzados (cut-ins, líneas de velocidad), sonido, clips de audio, objetos (*Apuntes*, *Repregunta*), repaso final, publicación.

@@ -27,7 +27,7 @@ Vas a ejecutar la **Fase 1 (Contenido)** del juego descrito en `CLAUDE.md`. En e
 - **`options`**: máximo 90 caracteres cada una, redactadas en primera persona, con longitud y tono parecidos entre sí para que la correcta no destaque por la forma.
   - `choice`: 4 opciones; exactamente una `real`; como mucho una `partial`; el resto `false`.
   - `complete`: `question` es la cita con `___`; 4 opciones cortas, una `real`.
-  - `true_false`: `question` es la afirmación; 2 opciones («Sí, lo dijo» / «No, no lo dijo»), una `real`.
+  - `true_false`: `question` es la afirmación; 2 opciones («Verdadero» / «Falso»), una `real`.
 - **Respuesta real**: parte de la columna «Respuesta real» del esquema y contrástala con el tramo de la transcripción. Si la transcripción no la sostiene, corrige el esquema y dilo en el resumen final.
 - **Evasivas**: cuando el entrevistado no contestó, la opción real lo dice tal cual.
 - **Distractores**: errores razonables (otra cifra, postura más tajante o más tibia, medida parecida). Nunca posturas ofensivas, caricaturas ni nada que pueda leerse como una declaración real que no hizo.

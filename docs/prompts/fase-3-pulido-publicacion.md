@@ -13,16 +13,18 @@ Vas a ejecutar la **Fase 3 (Pulido y publicación)** del juego descrito en `CLAU
 
 ## Qué tienes que entregar
 
-### 1. Arte original en pixel art
+### 1. Arte original de anime moderno
 
-- Paleta única y limitada para todo el juego.
-- Sprites del jugador (de espaldas) y del rival (de frente) para la batalla, y retratos pequeños para los diálogos. Son personas reales: representación sobria y reconocible por rasgos generales (traje, peinado, micrófono de pódcast), **sin caricatura ni rasgos ridiculizantes**, y con el mismo trato para ambos.
-- Fondo de batalla (un plató de pódcast), mapa con 10 nodos unidos por un camino, medallas de oro, plata y bronce, iconos de objetos y marco de la caja de diálogo.
-- Todo dibujado para este juego (SVG o PNG generados en el repositorio). Nada tomado ni calcado de Pokémon ni de otra franquicia: ni criaturas, ni interfaz, ni tipografía.
+Sigue la sección «Dirección de arte» de `CLAUDE.md`.
+
+- Ilustraciones SVG de los dos personajes: medio cuerpo para la batalla (dos o tres poses: neutra, hablando, reacción) y retrato para diálogos y *cut-ins*. Línea limpia y cel shading en dos o tres tonos. Son personas reales: proporciones adultas, representación sobria y reconocible por rasgos generales (traje, peinado, micrófono de pódcast), **sin caricatura ni rasgos ridiculizantes**, y con el mismo trato para ambos.
+- Fondo del plató con profundidad (focos, bokeh, luz volumétrica) en capas para un leve efecto de paralaje; mapa ilustrado nocturno con los 10 temas como puntos de luz; medallas, iconos de objetos y emblema del título.
+- Todo dibujado para este juego y guardado en `assets/art/` con los nombres que dejó la Fase 2. Nada tomado ni calcado de un anime, JRPG u otra franquicia concreta: ni personajes, ni encuadres, ni interfaz, ni tipografía.
+- Revisa cada ilustración renderizada (captura con Playwright) antes de darla por buena; si un retrato no queda digno, simplifícalo a silueta estilizada antes que dejarlo deforme. Indica al usuario que puede sustituir cualquier archivo por ilustraciones propias.
 
 ### 2. Animación y sonido
 
-- Animaciones breves: entrada de los personajes, golpe y sacudida al acertar, bajada de la barra de Presión, entrega de medalla, transición entre pantallas. Todas se desactivan con la opción de ajustes y con `prefers-reduced-motion`.
+- Puesta en escena cinematográfica: bandas de cine al iniciar la batalla y en la revelación, *cut-in* del personaje al elegir respuesta, líneas de velocidad, destello y sacudida breve de cámara al acertar, plano frío al fallar, tipografía cinética en los mensajes de resolución, entrega de medalla y transiciones entre pantallas. A 60 fps en un móvil medio, usando solo `transform` y `opacity`. Todas se desactivan con la opción de ajustes y con `prefers-reduced-motion`.
 - Efectos de sonido originales generados con Web Audio (selección, acierto, fallo, medalla), con botón de silencio visible y recordado. Sin música con derechos.
 
 ### 3. Mecánicas pendientes

@@ -4,7 +4,7 @@ Guía de trabajo para este repositorio. Léela entera antes de tocar nada.
 
 ## Qué es este proyecto
 
-Un videojuego web de **batallas por turnos al estilo de los RPG clásicos de captura de monstruos**, cuyo contenido sale íntegramente de **una entrevista real** (audio + transcripción).
+Un videojuego web de **batallas dialécticas por turnos, con estética de anime moderno y cinematográfico en la línea de los JRPG contemporáneos**, cuyo contenido sale íntegramente de **una entrevista real** (audio + transcripción).
 
 - El **jugador encarna al entrevistado**.
 - El **entrevistador es el rival**: cada pregunta suya es un "ataque".
@@ -23,12 +23,25 @@ Un videojuego web de **batallas por turnos al estilo de los RPG clásicos de cap
 1. **Fidelidad a la entrevista.** Toda respuesta marcada como correcta, toda cita y todo resumen debe poder rastrearse a un tramo concreto de la transcripción (`source.start` / `source.end`). Si no está en la transcripción, no entra en el juego. Las citas solo corrigen erratas evidentes de la transcripción automática, nunca el sentido; las dudosas llevan `verified: false` hasta comprobarlas con el audio.
 2. **No inventar declaraciones.** Las respuestas incorrectas (distractores) son verosímiles pero nunca se presentan como algo que el entrevistado dijo. Tras cada turno se muestra siempre la respuesta real, se acierte o no.
 3. **No poner en boca del entrevistado nada ofensivo o dañino** como distractor. Los distractores son errores razonables (matices, cifras, posturas contrarias suaves), no caricaturas.
-4. **Arte, nombres, música y textos 100 % originales.** Es un juego "del género", no una copia: nada de sprites, criaturas, nombres, tipografías, sonidos ni interfaz calcados de Pokémon ni de ninguna otra franquicia. Los nombres de este documento (Citadex, Medallas, etc.) son propios.
+4. **Arte, nombres, música y textos 100 % originales.** Es un juego "del género", no una copia: nada de personajes, ilustraciones, nombres, tipografías, sonidos ni interfaz calcados de ningún anime, JRPG u otra franquicia concreta. Los nombres de este documento (Citadex, Medallas, etc.) son propios.
 5. **Motor y contenido separados.** El motor no contiene ni una frase de la entrevista; todo vive en `content/`. Cambiar de entrevista debe ser cambiar un JSON y unos audios.
 6. **Neutralidad y respeto.** Los personajes son personas reales y el tema es político. El juego informa de lo que el entrevistado dijo; no valora si es cierto ni toma partido. Cuando no contestó a una pregunta, se refleja tal cual. Las correcciones de los verificadores se muestran. Representación gráfica sobria, sin caricatura. No se convierten en preguntas ni citas las acusaciones no probadas contra terceros (ver exclusiones en `docs/esquema-juego.md`).
 7. **Idioma:** textos del juego y de documentación en español; identificadores de código en inglés.
 
 ## Diseño del juego
+
+### Dirección de arte
+
+**Anime moderno y cinematográfico**, inspirado en el anime japonés de alta calidad y en los JRPG contemporáneos. Sustituye por completo a la estética retro de píxel.
+
+- **Personajes:** ilustración de estilo anime con línea limpia y sombreado plano en dos o tres tonos (cel shading), de medio cuerpo en batalla y en retrato en los diálogos. Son personas reales: proporciones adultas y sobrias, reconocibles por rasgos generales, sin caricatura ni rasgos infantilizados.
+- **Puesta en escena:** formato panorámico con bandas de cine en los momentos clave, fondos con profundidad (plató de pódcast con focos, bokeh y luz volumétrica), planos que cambian entre pregunta y respuesta, y primeros planos tipo *cut-in* al elegir y al resolver.
+- **Impacto:** líneas de velocidad, destellos, barridos de luz y sacudidas breves de cámara al acertar; nada de eso al fallar, solo un plano más frío. Tipografía cinética para los mensajes de resolución.
+- **Interfaz:** HUD moderno de JRPG: paneles translúcidos y angulados, tipografía sans geométrica, barras con degradado y brillo, transiciones fluidas. Nada de marcos de píxel ni tipografía de 8 bits.
+- **Color:** base nocturna (azules profundos y negro) con dos acentos, uno por personaje, y dorado para medallas y aciertos. Alto contraste en el texto.
+- **Mapa:** un recorrido ilustrado por el plató y la ciudad de noche, con los 10 temas como puntos de luz.
+- **Técnica:** todo con SVG, CSS y animación web (sin motor ni build). Las ilustraciones son archivos sustituibles en `assets/art/`: si el usuario aporta ilustraciones de mayor calidad, se cambian sin tocar el código.
+- **Límites:** inspiración de género, no copia. Ningún personaje, encuadre, interfaz o logotipo reconocible de una obra concreta. Todas las animaciones se desactivan con la opción de ajustes y con `prefers-reduced-motion`.
 
 ### Principios de sesión (web, sin partidas guardadas)
 
@@ -61,7 +74,7 @@ El juego vive en una web: no hay cuentas ni partidas guardadas en las que confia
 
 ### La batalla
 
-Composición clásica: rival arriba a la derecha, jugador abajo a la izquierda, barra de *Presión* del entrevistador, caja de diálogo abajo con menú de 4 opciones. Indicador "Ronda 1/3" y botón "Mapa".
+Composición cinematográfica: el entrevistador a un lado del plano y el entrevistado al otro, enfrentados sobre el fondo del plató; barra de *Presión* del entrevistador en el HUD, panel de diálogo inferior y menú de 4 respuestas. Indicador "Ronda 1/3" y botón "Mapa". El plano se acerca a quien habla.
 
 Una **ronda**:
 
@@ -177,9 +190,9 @@ src/
   battle/            motor de turnos, resolución, combos, objetos
   ui/                caja de diálogo, menú, barras, efecto máquina de escribir
   audio.js           reproducción de clips y efectos
-styles/              estilo pixel-art (paleta limitada, tipografía pixel de licencia libre)
+styles/              estilo anime cinematográfico (variables de color, HUD, animaciones)
 assets/
-  sprites/           arte original
+  art/               ilustraciones originales (SVG), sustituibles
   audio/             interview.<ext>, clips/, sfx/
 content/
   transcript.md      fuente de verdad
@@ -192,7 +205,7 @@ tests/               lógica de batalla y puntuación
 ```
 
 - La lógica de batalla y puntuación es **pura** (sin DOM) y lleva tests.
-- Resolución base tipo 480×320 escalada con `image-rendering: pixelated`; debe jugarse bien en móvil (táctil) y en teclado (flechas + Enter).
+- Escena panorámica 16:9 que se adapta al ancho disponible; en móvil vertical la escena ocupa la parte superior y el diálogo y las respuestas la inferior. Debe jugarse bien en táctil y en teclado (flechas + Enter).
 - Accesibilidad: todo audio tiene su texto en pantalla; nunca depender solo del color; opción de desactivar las animaciones.
 
 ## Comandos
@@ -212,8 +225,8 @@ Tres fases. Cada una tiene un prompt autónomo en `docs/prompts/` pensado para l
 | Fase | Prompt | Resultado |
 |---|---|---|
 | 1. Contenido | `docs/prompts/fase-1-contenido.md` | `content/interview.json` con las 58 preguntas y el validador |
-| 2. Juego jugable | `docs/prompts/fase-2-juego.md` | Juego completo de título a resultado final, con lógica testeada y presentación funcional |
-| 3. Pulido y publicación | `docs/prompts/fase-3-pulido-publicacion.md` | Arte y sonido originales, objetos, repaso final, clips si hay audio, GitHub Pages |
+| 2. Juego jugable | `docs/prompts/fase-2-juego.md` | Juego completo de título a resultado final, con lógica testeada y la interfaz ya en la dirección de arte |
+| 3. Pulido y publicación | `docs/prompts/fase-3-pulido-publicacion.md` | Arte anime y puesta en escena cinematográfica definitivos, sonido, objetos, repaso final, clips si hay audio, GitHub Pages |
 
 ## Forma de trabajar
 
